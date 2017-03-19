@@ -255,7 +255,7 @@
 
       <span class="selected-tag" v-for="option in valueAsArray" v-bind:key="option.index">
         {{ getOptionLabel(option) }}
-        <button v-if="multiple" @click="deselect(option)" type="button" class="close">
+        <button @click="deselect(option)" type="button" class="close">
           <span aria-hidden="true">&times;</span>
         </button>
       </span>
